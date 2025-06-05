@@ -2,10 +2,9 @@
 
 namespace Sendy\OpenSearchQueryBuilder\Tests\Queries;
 
-use Elastic\Elasticsearch\Client;
-use Elastic\Transport\TransportBuilder;
+use OpenSearch\Client;
+use OpenSearch\TransportFactory;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\LoggerInterface;
 use Sendy\OpenSearchQueryBuilder\Builder;
 
 class CollapseTest extends TestCase
@@ -17,13 +16,11 @@ class CollapseTest extends TestCase
 
     protected function setUp(): void
     {
-        $transport = TransportBuilder::create()
-            ->setClient(new \Http\Mock\Client())
-            ->build();
+        $transport = (new TransportFactory())
+            ->setHttpClient(new \Http\Mock\Client())
+            ->create();
 
-        $logger = $this->createStub(LoggerInterface::class);
-
-        $this->client = new Client($transport, $logger);
+        $this->client = new Client($transport);
 
         $this->builder = new Builder($this->client);
     }

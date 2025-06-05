@@ -2,9 +2,7 @@
 
 namespace Sendy\OpenSearchQueryBuilder;
 
-use Elastic\Elasticsearch\Client;
-use Elastic\Elasticsearch\Response\Elasticsearch;
-use Http\Promise\Promise;
+use OpenSearch\Client;
 use Sendy\OpenSearchQueryBuilder\Aggregations\Aggregation;
 use Sendy\OpenSearchQueryBuilder\Queries\BoolQuery;
 use Sendy\OpenSearchQueryBuilder\Queries\NestedQuery\InnerHits;
@@ -78,7 +76,7 @@ class Builder
         return $this;
     }
 
-    public function search(): Elasticsearch|Promise
+    public function search(): array
     {
         $payload = $this->getPayload();
 

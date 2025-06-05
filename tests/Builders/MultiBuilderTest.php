@@ -2,10 +2,9 @@
 
 namespace Sendy\OpenSearchQueryBuilder\Tests\Builders;
 
-use Elastic\Elasticsearch\Client;
-use Elastic\Transport\TransportBuilder;
+use OpenSearch\Client;
+use OpenSearch\TransportFactory;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\LoggerInterface;
 use Sendy\OpenSearchQueryBuilder\Builder;
 use Sendy\OpenSearchQueryBuilder\MultiBuilder;
 use Sendy\OpenSearchQueryBuilder\Queries\TermQuery;
@@ -18,13 +17,11 @@ class MultiBuilderTest extends TestCase
 
     protected function setUp(): void
     {
-        $transport = TransportBuilder::create()
-            ->setClient(new \Http\Mock\Client())
-            ->build();
+        $transport = (new TransportFactory())
+            ->setHttpClient(new \Http\Mock\Client())
+            ->create();
 
-        $logger = $this->createStub(LoggerInterface::class);
-
-        $this->client = new Client($transport, $logger);
+        $this->client = new Client($transport);
 
         $this->multiBuilder = new MultiBuilder($this->client);
     }
