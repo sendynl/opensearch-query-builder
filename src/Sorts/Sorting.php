@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\ElasticsearchQueryBuilder\Sorts;
+namespace Sendy\OpenSearchQueryBuilder\Sorts;
 
 interface Sorting
 {

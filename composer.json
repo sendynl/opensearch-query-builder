@@ -1,13 +1,14 @@
 {
-    "name": "spatie/elasticsearch-query-builder",
-    "description": "Build and execute an Elasticsearch search query using a fluent PHP API",
+    "name": "sendynl/opensearch-query-builder",
+    "description": "Build and execute an OpenSearch search query using a fluent PHP API",
     "keywords": [
         "spatie",
-        "elasticsearch-query-builder",
-        "elasticsearch",
+        "sendy",
+        "opensearch-query-builder",
+        "opensearch",
         "search"
     ],
-    "homepage": "https://github.com/spatie/elasticsearch-query-builder",
+    "homepage": "https://github.com/sendynl/opensearch-query-builder",
     "license": "MIT",
     "authors": [
         {
@@ -19,10 +20,15 @@
             "name": "Ruben Van Assche",
             "email": "ruben@spatie.be",
             "role": "Developer"
+        },
+        {
+            "name": "Wim Griffioen",
+            "email": "w.griffioen@sendy.nl",
+            "role": "Developer"
         }
     ],
     "require": {
-        "php": "^8.0"
+        "php": "^8.1"
     },
     "require-dev": {
         "elasticsearch/elasticsearch": "^8.0",
@@ -34,12 +40,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\ElasticsearchQueryBuilder\\": "src"
+            "Sendy\\OpenSearchQueryBuilder\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\ElasticsearchQueryBuilder\\Tests\\": "tests"
+            "Sendy\\OpenSearchQueryBuilder\\Tests\\": "tests"
         }
     },
     "scripts": {

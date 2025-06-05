@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\ElasticsearchQueryBuilder\Sorts\Concerns;
+namespace Sendy\OpenSearchQueryBuilder\Sorts\Concerns;
 
 trait HasMode
 {

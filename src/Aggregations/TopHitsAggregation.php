@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\ElasticsearchQueryBuilder\Aggregations;
+namespace Sendy\OpenSearchQueryBuilder\Aggregations;
 
-use Spatie\ElasticsearchQueryBuilder\Sorts\Sort;
+use Sendy\OpenSearchQueryBuilder\Sorts\Sort;
 
 class TopHitsAggregation extends Aggregation
 {

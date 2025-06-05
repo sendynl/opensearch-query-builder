@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\ElasticsearchQueryBuilder\Tests\Queries;
+namespace Sendy\OpenSearchQueryBuilder\Tests\Queries;
 
 use PHPUnit\Framework\TestCase;
-use Spatie\ElasticsearchQueryBuilder\Queries\NestedQuery;
-use Spatie\ElasticsearchQueryBuilder\Queries\NestedQuery\InnerHits;
-use Spatie\ElasticsearchQueryBuilder\Queries\Query;
+use Sendy\OpenSearchQueryBuilder\Queries\NestedQuery;
+use Sendy\OpenSearchQueryBuilder\Queries\NestedQuery\InnerHits;
+use Sendy\OpenSearchQueryBuilder\Queries\Query;
 
 class NestedQueryTest extends TestCase
 {

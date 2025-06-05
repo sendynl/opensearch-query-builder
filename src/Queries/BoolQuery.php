@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\ElasticsearchQueryBuilder\Queries;
+namespace Sendy\OpenSearchQueryBuilder\Queries;
 
-use Spatie\ElasticsearchQueryBuilder\Exceptions\BoolQueryTypeDoesNotExist;
+use Sendy\OpenSearchQueryBuilder\Exceptions\BoolQueryTypeDoesNotExist;
 
 class BoolQuery implements Query
 {

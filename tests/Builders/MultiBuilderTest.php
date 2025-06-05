@@ -1,14 +1,14 @@
 <?php
 
-namespace Spatie\ElasticsearchQueryBuilder\Tests\Builders;
+namespace Sendy\OpenSearchQueryBuilder\Tests\Builders;
 
 use Elastic\Elasticsearch\Client;
 use Elastic\Transport\TransportBuilder;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
-use Spatie\ElasticsearchQueryBuilder\Builder;
-use Spatie\ElasticsearchQueryBuilder\MultiBuilder;
-use Spatie\ElasticsearchQueryBuilder\Queries\TermQuery;
+use Sendy\OpenSearchQueryBuilder\Builder;
+use Sendy\OpenSearchQueryBuilder\MultiBuilder;
+use Sendy\OpenSearchQueryBuilder\Queries\TermQuery;
 
 class MultiBuilderTest extends TestCase
 {

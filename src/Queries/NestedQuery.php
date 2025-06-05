@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\ElasticsearchQueryBuilder\Queries;
+namespace Sendy\OpenSearchQueryBuilder\Queries;
 
-use Spatie\ElasticsearchQueryBuilder\Queries\NestedQuery\InnerHits;
+use Sendy\OpenSearchQueryBuilder\Queries\NestedQuery\InnerHits;
 
 class NestedQuery implements Query
 {

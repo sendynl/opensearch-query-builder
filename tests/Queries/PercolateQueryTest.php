@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\ElasticsearchQueryBuilder\Tests\Queries;
+namespace Sendy\OpenSearchQueryBuilder\Tests\Queries;
 
 use Exception;
 use PHPUnit\Framework\TestCase;
-use Spatie\ElasticsearchQueryBuilder\Queries\PercolateQuery;
+use Sendy\OpenSearchQueryBuilder\Queries\PercolateQuery;
 
 class PercolateQueryTest extends TestCase
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\ElasticsearchQueryBuilder\Queries\NestedQuery;
+namespace Sendy\OpenSearchQueryBuilder\Queries\NestedQuery;
 
-use Spatie\ElasticsearchQueryBuilder\SortCollection;
-use Spatie\ElasticsearchQueryBuilder\Sorts\Sort;
+use Sendy\OpenSearchQueryBuilder\SortCollection;
+use Sendy\OpenSearchQueryBuilder\Sorts\Sort;
 
 class InnerHits
 {

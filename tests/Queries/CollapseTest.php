@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\ElasticsearchQueryBuilder\Tests\Queries;
+namespace Sendy\OpenSearchQueryBuilder\Tests\Queries;
 
 use Elastic\Elasticsearch\Client;
 use Elastic\Transport\TransportBuilder;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
-use Spatie\ElasticsearchQueryBuilder\Builder;
+use Sendy\OpenSearchQueryBuilder\Builder;
 
 class CollapseTest extends TestCase
 {

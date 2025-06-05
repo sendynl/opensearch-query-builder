@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\ElasticsearchQueryBuilder\Exceptions;
+namespace Sendy\OpenSearchQueryBuilder\Exceptions;
 
 use InvalidArgumentException;
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\ElasticsearchQueryBuilder\Tests\Sorts;
+namespace Sendy\OpenSearchQueryBuilder\Tests\Sorts;
 
 use PHPUnit\Framework\TestCase;
-use Spatie\ElasticsearchQueryBuilder\Queries\Query;
-use Spatie\ElasticsearchQueryBuilder\Sorts\NestedSort;
+use Sendy\OpenSearchQueryBuilder\Queries\Query;
+use Sendy\OpenSearchQueryBuilder\Sorts\NestedSort;
 
 class NestedSortTest extends TestCase
 {

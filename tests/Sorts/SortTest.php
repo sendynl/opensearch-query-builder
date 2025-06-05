@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\ElasticsearchQueryBuilder\Tests\Sorts;
+namespace Sendy\OpenSearchQueryBuilder\Tests\Sorts;
 
 use PHPUnit\Framework\TestCase;
-use Spatie\ElasticsearchQueryBuilder\Sorts\Sort;
+use Sendy\OpenSearchQueryBuilder\Sorts\Sort;
 
 class SortTest extends TestCase
 {
