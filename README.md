@@ -355,6 +355,19 @@ https://docs.opensearch.org/docs/latest/aggregations/metric/top-hits/
 );
 ```
 
+#### `DateHistogramAggregation`
+
+https://docs.opensearch.org/docs/latest/aggregations/bucket/date-histogram/
+
+```php
+\Sendynl\OpenSearchQueryBuilder\Aggregations\DateHistogramAggregation::create(
+    'name',
+    '@timestamp'
+    '1h',
+)
+    ->aggregation(/* $subAggregation */);
+```
+
 ## Adding sorts
 
 The `Builder` (and some aggregations) has a `addSort()` method that takes a `Sort` instance to sort the results. You can read more about how sorting works in [the OpenSearch docs](https://docs.opensearch.org/docs/latest/search-plugins/searching-data/sort/).
