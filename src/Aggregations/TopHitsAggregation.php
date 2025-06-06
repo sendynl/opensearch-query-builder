@@ -10,7 +10,7 @@ class TopHitsAggregation extends Aggregation
 
     protected ?Sort $sort = null;
 
-    public static function create(string $name, int $size, ?Sort $sort = null): static
+    public static function create(string $name, int $size, ?Sort $sort = null): TopHitsAggregation
     {
         return new self($name, $size, $sort);
     }

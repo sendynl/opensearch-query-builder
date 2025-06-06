@@ -12,7 +12,7 @@ class Sort implements Sorting
     use HasUnmappedType;
     use HasMode;
 
-    public static function create(string $field, string $order = self::DESC): static
+    public static function create(string $field, string $order = self::DESC): Sort
     {
         return new self($field, $order);
     }

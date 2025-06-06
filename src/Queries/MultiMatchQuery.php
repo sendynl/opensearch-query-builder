@@ -16,7 +16,7 @@ class MultiMatchQuery implements Query
         array $fields,
         int | string | null $fuzziness = null,
         ?string $type = null
-    ): static {
+    ): MultiMatchQuery {
         return new self($query, $fields, $fuzziness, $type);
     }
 

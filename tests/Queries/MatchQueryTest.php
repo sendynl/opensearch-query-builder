@@ -81,7 +81,7 @@ class MatchQueryTest extends TestCase
         MatchQuery::create(
             field: 'test_field',
             query: 'test_value',
-            operator: 1
+            operator: 1 // @phpstan-ignore argument.type (This test is meant to provide wrong types)
         );
     }
 }

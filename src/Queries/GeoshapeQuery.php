@@ -65,7 +65,7 @@ class GeoshapeQuery implements Query
         string $type,
         array $coordinates,
         ?string $relation = self::RELATION_INTERSECTS,
-    ): static {
+    ): GeoshapeQuery {
         return new self($field, $type, $coordinates, $relation);
     }
 
