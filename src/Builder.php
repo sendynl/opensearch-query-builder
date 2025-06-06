@@ -1,15 +1,13 @@
 <?php
 
-namespace Spatie\ElasticsearchQueryBuilder;
+namespace Sendy\OpenSearchQueryBuilder;
 
-use Elastic\Elasticsearch\Client;
-use Elastic\Elasticsearch\Response\Elasticsearch;
-use Http\Promise\Promise;
-use Spatie\ElasticsearchQueryBuilder\Aggregations\Aggregation;
-use Spatie\ElasticsearchQueryBuilder\Queries\BoolQuery;
-use Spatie\ElasticsearchQueryBuilder\Queries\NestedQuery\InnerHits;
-use Spatie\ElasticsearchQueryBuilder\Queries\Query;
-use Spatie\ElasticsearchQueryBuilder\Sorts\Sorting;
+use OpenSearch\Client;
+use Sendy\OpenSearchQueryBuilder\Aggregations\Aggregation;
+use Sendy\OpenSearchQueryBuilder\Queries\BoolQuery;
+use Sendy\OpenSearchQueryBuilder\Queries\NestedQuery\InnerHits;
+use Sendy\OpenSearchQueryBuilder\Queries\Query;
+use Sendy\OpenSearchQueryBuilder\Sorts\Sorting;
 
 class Builder
 {
@@ -78,7 +76,7 @@ class Builder
         return $this;
     }
 
-    public function search(): Elasticsearch|Promise
+    public function search(): array
     {
         $payload = $this->getPayload();
 

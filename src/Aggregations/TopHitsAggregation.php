@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\ElasticsearchQueryBuilder\Aggregations;
+namespace Sendy\OpenSearchQueryBuilder\Aggregations;
 
-use Spatie\ElasticsearchQueryBuilder\Sorts\Sort;
+use Sendy\OpenSearchQueryBuilder\Sorts\Sort;
 
 class TopHitsAggregation extends Aggregation
 {
@@ -10,7 +10,7 @@ class TopHitsAggregation extends Aggregation
 
     protected ?Sort $sort = null;
 
-    public static function create(string $name, int $size, ?Sort $sort = null): static
+    public static function create(string $name, int $size, ?Sort $sort = null): TopHitsAggregation
     {
         return new self($name, $size, $sort);
     }

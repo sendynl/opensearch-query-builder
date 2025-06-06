@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\ElasticsearchQueryBuilder\Tests\Queries;
+namespace Sendy\OpenSearchQueryBuilder\Tests\Queries;
 
 use PHPUnit\Framework\TestCase;
-use Spatie\ElasticsearchQueryBuilder\Exceptions\InvalidOperatorValue;
-use Spatie\ElasticsearchQueryBuilder\Queries\MatchQuery;
+use Sendy\OpenSearchQueryBuilder\Exceptions\InvalidOperatorValue;
+use Sendy\OpenSearchQueryBuilder\Queries\MatchQuery;
 
 class MatchQueryTest extends TestCase
 {
@@ -81,7 +81,7 @@ class MatchQueryTest extends TestCase
         MatchQuery::create(
             field: 'test_field',
             query: 'test_value',
-            operator: 1
+            operator: 1 // @phpstan-ignore argument.type (This test is meant to provide wrong types)
         );
     }
 }

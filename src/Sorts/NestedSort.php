@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\ElasticsearchQueryBuilder\Sorts;
+namespace Sendy\OpenSearchQueryBuilder\Sorts;
 
-use Spatie\ElasticsearchQueryBuilder\Queries\Query;
-use Spatie\ElasticsearchQueryBuilder\Sorts\Concerns\HasMissing;
-use Spatie\ElasticsearchQueryBuilder\Sorts\Concerns\HasMode;
-use Spatie\ElasticsearchQueryBuilder\Sorts\Concerns\HasUnmappedType;
+use Sendy\OpenSearchQueryBuilder\Queries\Query;
+use Sendy\OpenSearchQueryBuilder\Sorts\Concerns\HasMissing;
+use Sendy\OpenSearchQueryBuilder\Sorts\Concerns\HasMode;
+use Sendy\OpenSearchQueryBuilder\Sorts\Concerns\HasUnmappedType;
 
 class NestedSort implements Sorting
 {

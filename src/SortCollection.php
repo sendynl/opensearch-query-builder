@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\ElasticsearchQueryBuilder;
+namespace Sendy\OpenSearchQueryBuilder;
 
-use Spatie\ElasticsearchQueryBuilder\Sorts\Sorting;
+use Sendy\OpenSearchQueryBuilder\Sorts\Sorting;
 
 class SortCollection
 {

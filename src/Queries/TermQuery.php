@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\ElasticsearchQueryBuilder\Queries;
+namespace Sendy\OpenSearchQueryBuilder\Queries;
 
 class TermQuery implements Query
 {
@@ -8,7 +8,7 @@ class TermQuery implements Query
 
     protected bool|int|string $value;
 
-    public static function create(string $field, bool|int|string $value): static
+    public static function create(string $field, bool|int|string $value): TermQuery
     {
         return new self($field, $value);
     }

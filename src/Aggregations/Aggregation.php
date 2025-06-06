@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\ElasticsearchQueryBuilder\Aggregations;
+namespace Sendy\OpenSearchQueryBuilder\Aggregations;
 
 abstract class Aggregation
 {

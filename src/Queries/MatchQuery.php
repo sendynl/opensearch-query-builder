@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\ElasticsearchQueryBuilder\Queries;
+namespace Sendy\OpenSearchQueryBuilder\Queries;
 
-use Spatie\ElasticsearchQueryBuilder\Exceptions\InvalidOperatorValue;
+use Sendy\OpenSearchQueryBuilder\Exceptions\InvalidOperatorValue;
 
 class MatchQuery implements Query
 {

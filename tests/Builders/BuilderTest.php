@@ -1,14 +1,13 @@
 <?php
 
-namespace Spatie\ElasticsearchQueryBuilder\Tests\Builders;
+namespace Sendy\OpenSearchQueryBuilder\Tests\Builders;
 
-use Elastic\Elasticsearch\Client;
-use Elastic\Transport\TransportBuilder;
+use OpenSearch\Client;
+use OpenSearch\TransportFactory;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\LoggerInterface;
-use Spatie\ElasticsearchQueryBuilder\Builder;
-use Spatie\ElasticsearchQueryBuilder\Queries\NestedQuery\InnerHits;
-use Spatie\ElasticsearchQueryBuilder\Sorts\Sort;
+use Sendy\OpenSearchQueryBuilder\Builder;
+use Sendy\OpenSearchQueryBuilder\Queries\NestedQuery\InnerHits;
+use Sendy\OpenSearchQueryBuilder\Sorts\Sort;
 
 class BuilderTest extends TestCase
 {
@@ -16,13 +15,11 @@ class BuilderTest extends TestCase
 
     public function setUp(): void
     {
-        $transport = TransportBuilder::create()
-            ->setClient(new \Http\Mock\Client())
-            ->build();
+        $transport = (new TransportFactory())
+            ->setHttpClient(new \Http\Mock\Client())
+            ->create();
 
-        $logger = $this->createStub(LoggerInterface::class);
-
-        $this->client = new Client($transport, $logger);
+        $this->client = new Client($transport);
     }
 
     public function testGeneratesCollapseWithPlainArrayData(): void

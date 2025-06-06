@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\ElasticsearchQueryBuilder\Queries;
+namespace Sendy\OpenSearchQueryBuilder\Queries;
 
-use Spatie\ElasticsearchQueryBuilder\Exceptions\BoolQueryTypeDoesNotExist;
+use Sendy\OpenSearchQueryBuilder\Exceptions\BoolQueryTypeDoesNotExist;
 
 class BoolQuery implements Query
 {
@@ -13,7 +13,7 @@ class BoolQuery implements Query
 
     protected ?string $minimumShouldMatch = null;
 
-    public static function create(): static
+    public static function create(): BoolQuery
     {
         return new self();
     }

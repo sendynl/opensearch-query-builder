@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\ElasticsearchQueryBuilder\Tests\Queries;
+namespace Sendy\OpenSearchQueryBuilder\Tests\Queries;
 
 use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
-use Spatie\ElasticsearchQueryBuilder\Queries\GeoshapeQuery;
+use Sendy\OpenSearchQueryBuilder\Queries\GeoshapeQuery;
 
 final class GeoshapeQueryTest extends TestCase
 {

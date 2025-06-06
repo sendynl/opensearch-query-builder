@@ -1,13 +1,14 @@
 {
-    "name": "spatie/elasticsearch-query-builder",
-    "description": "Build and execute an Elasticsearch search query using a fluent PHP API",
+    "name": "sendynl/opensearch-query-builder",
+    "description": "Build and execute an OpenSearch search query using a fluent PHP API",
     "keywords": [
         "spatie",
-        "elasticsearch-query-builder",
-        "elasticsearch",
+        "sendy",
+        "opensearch-query-builder",
+        "opensearch",
         "search"
     ],
-    "homepage": "https://github.com/spatie/elasticsearch-query-builder",
+    "homepage": "https://github.com/sendynl/opensearch-query-builder",
     "license": "MIT",
     "authors": [
         {
@@ -19,31 +20,38 @@
             "name": "Ruben Van Assche",
             "email": "ruben@spatie.be",
             "role": "Developer"
+        },
+        {
+            "name": "Wim Griffioen",
+            "email": "w.griffioen@sendy.nl",
+            "role": "Developer"
         }
     ],
     "require": {
-        "php": "^8.0"
+        "php": "^8.2"
     },
     "require-dev": {
-        "elasticsearch/elasticsearch": "^8.0",
-        "friendsofphp/php-cs-fixer": "^2.17",
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "nyholm/psr7": "^1.8",
+        "opensearch-project/opensearch-php": "^2.4.3",
         "php-http/mock-client": "^1.5",
+        "phpstan/phpstan": "^2.1",
         "phpunit/phpunit": "^9.5",
         "spatie/ray": "^1.10",
-        "vimeo/psalm": "^4.3"
+        "symfony/http-client": "^7.3"
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\ElasticsearchQueryBuilder\\": "src"
+            "Sendy\\OpenSearchQueryBuilder\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\ElasticsearchQueryBuilder\\Tests\\": "tests"
+            "Sendy\\OpenSearchQueryBuilder\\Tests\\": "tests"
         }
     },
     "scripts": {
-        "psalm": "vendor/bin/psalm",
+        "phpstan": "vendor/bin/phpstan analyze",
         "test": "vendor/bin/phpunit",
         "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
         "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"

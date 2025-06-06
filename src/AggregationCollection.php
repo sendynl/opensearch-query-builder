@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\ElasticsearchQueryBuilder;
+namespace Sendy\OpenSearchQueryBuilder;
 
-use Spatie\ElasticsearchQueryBuilder\Aggregations\Aggregation;
+use Sendy\OpenSearchQueryBuilder\Aggregations\Aggregation;
 
 class AggregationCollection
 {

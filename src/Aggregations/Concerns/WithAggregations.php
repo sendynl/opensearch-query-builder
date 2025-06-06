@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\ElasticsearchQueryBuilder\Aggregations\Concerns;
+namespace Sendy\OpenSearchQueryBuilder\Aggregations\Concerns;
 
-use Spatie\ElasticsearchQueryBuilder\AggregationCollection;
-use Spatie\ElasticsearchQueryBuilder\Aggregations\Aggregation;
+use Sendy\OpenSearchQueryBuilder\AggregationCollection;
+use Sendy\OpenSearchQueryBuilder\Aggregations\Aggregation;
 
 trait WithAggregations
 {

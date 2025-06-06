@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\ElasticsearchQueryBuilder\Tests\Queries\NestedQuery;
+namespace Sendy\OpenSearchQueryBuilder\Tests\Queries\NestedQuery;
 
 use PHPUnit\Framework\TestCase;
-use Spatie\ElasticsearchQueryBuilder\Queries\NestedQuery\InnerHits;
-use Spatie\ElasticsearchQueryBuilder\SortCollection;
-use Spatie\ElasticsearchQueryBuilder\Sorts\Sort;
+use Sendy\OpenSearchQueryBuilder\Queries\NestedQuery\InnerHits;
+use Sendy\OpenSearchQueryBuilder\SortCollection;
+use Sendy\OpenSearchQueryBuilder\Sorts\Sort;
 
 class InnerHitsTest extends TestCase
 {

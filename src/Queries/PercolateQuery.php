@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\ElasticsearchQueryBuilder\Queries;
+namespace Sendy\OpenSearchQueryBuilder\Queries;
 
 use Exception;
 
@@ -11,7 +11,7 @@ class PercolateQuery implements Query
     protected string $index;
     protected string $id;
 
-    public static function create(string $field): static
+    public static function create(string $field): PercolateQuery
     {
         return new self($field);
     }

@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\ElasticsearchQueryBuilder\Tests\Aggregations;
+namespace Aggregations;
 
 use PHPUnit\Framework\TestCase;
-use Spatie\ElasticsearchQueryBuilder\Aggregations\DateHistogramAggregation;
-use Spatie\ElasticsearchQueryBuilder\Aggregations\TermsAggregation;
+use Sendy\OpenSearchQueryBuilder\Aggregations\DateHistogramAggregation;
+use Sendy\OpenSearchQueryBuilder\Aggregations\TermsAggregation;
 
 class DateHistogramAggregationTest extends TestCase
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\ElasticsearchQueryBuilder\Aggregations;
+namespace Sendy\OpenSearchQueryBuilder\Aggregations;
 
-use Spatie\ElasticsearchQueryBuilder\AggregationCollection;
-use Spatie\ElasticsearchQueryBuilder\Aggregations\Concerns\WithAggregations;
+use Sendy\OpenSearchQueryBuilder\AggregationCollection;
+use Sendy\OpenSearchQueryBuilder\Aggregations\Concerns\WithAggregations;
 use stdClass;
 
 class ReverseNestedAggregation extends Aggregation

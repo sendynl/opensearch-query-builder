@@ -1,10 +1,8 @@
 <?php
 
-namespace Spatie\ElasticsearchQueryBuilder;
+namespace Sendy\OpenSearchQueryBuilder;
 
-use Elastic\Elasticsearch\Client;
-use Elastic\Elasticsearch\Response\Elasticsearch;
-use Http\Promise\Promise;
+use OpenSearch\Client;
 
 class MultiBuilder
 {
@@ -37,7 +35,7 @@ class MultiBuilder
         return $payload;
     }
 
-    public function search(): Elasticsearch|Promise
+    public function search(): array
     {
         $payload = $this->getPayload();
 

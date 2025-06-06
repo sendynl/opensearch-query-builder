@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\ElasticsearchQueryBuilder\Aggregations;
+namespace Sendy\OpenSearchQueryBuilder\Aggregations;
 
-use Spatie\ElasticsearchQueryBuilder\Aggregations\Concerns\WithMissing;
+use Sendy\OpenSearchQueryBuilder\Aggregations\Concerns\WithMissing;
 
 class SumAggregation extends Aggregation
 {

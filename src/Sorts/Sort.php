@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\ElasticsearchQueryBuilder\Sorts;
+namespace Sendy\OpenSearchQueryBuilder\Sorts;
 
-use Spatie\ElasticsearchQueryBuilder\Sorts\Concerns\HasMissing;
-use Spatie\ElasticsearchQueryBuilder\Sorts\Concerns\HasMode;
-use Spatie\ElasticsearchQueryBuilder\Sorts\Concerns\HasUnmappedType;
+use Sendy\OpenSearchQueryBuilder\Sorts\Concerns\HasMissing;
+use Sendy\OpenSearchQueryBuilder\Sorts\Concerns\HasMode;
+use Sendy\OpenSearchQueryBuilder\Sorts\Concerns\HasUnmappedType;
 
 class Sort implements Sorting
 {
@@ -12,7 +12,7 @@ class Sort implements Sorting
     use HasUnmappedType;
     use HasMode;
 
-    public static function create(string $field, string $order = self::DESC): static
+    public static function create(string $field, string $order = self::DESC): Sort
     {
         return new self($field, $order);
     }
